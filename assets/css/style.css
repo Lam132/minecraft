@@ -1,0 +1,1658 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Minecraft-Ten";
+  src: url(/assets/fonts/MinecraftTen-VGORe.ttf);
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+body ul {
+  margin: 0;
+}
+body a:hover {
+  text-decoration: none;
+}
+
+.mc-globalbanner {
+  width: 100%;
+  min-height: 35px;
+  background-color: #000;
+  display: flex;
+  padding: 9px 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: -1px;
+  height: auto;
+  float: right;
+  position: relative;
+}
+.mc-globalbanner ul {
+  position: relative;
+  width: 50%;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+}
+.mc-globalbanner ul .mc-login,
+.mc-globalbanner ul .mc-redeem {
+  list-style: none;
+  min-width: 80px;
+  height: 100%;
+}
+.mc-globalbanner ul .mc-login a,
+.mc-globalbanner ul .mc-redeem a {
+  height: 100%;
+  background-color: transparent;
+  color: #a0e080;
+  border: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  font-size: 0.825rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  outline-offset: -2px;
+  float: right;
+}
+.mc-globalbanner ul .mc-login a:hover,
+.mc-globalbanner ul .mc-redeem a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.mc-globalbanner ul .mc-global {
+  display: inline;
+}
+.mc-globalbanner ul .mc-redeem a {
+  margin-left: 15px;
+}
+
+#mc-header {
+  font-size: large;
+  background-color: #171615;
+  padding: 0 13px;
+  height: 83px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+#mc-header .header-content .mc-nav {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  min-height: 83px;
+}
+#mc-header .header-content .mc-nav .mc-logo {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  display: inline-flex;
+}
+#mc-header .header-content .mc-nav .mc-logo img {
+  aspect-ratio: auto 2/1;
+  max-width: 300px;
+  height: 40px;
+  width: auto;
+}
+#mc-header .header-content .mc-nav .mc-primarynav {
+  height: 100%;
+}
+#mc-header .header-content .mc-nav .mc-primarynav ul {
+  padding-left: 0;
+  display: inline-flex;
+  margin-bottom: 0;
+  min-height: 83px;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li {
+  list-style: none;
+  min-width: 79px;
+  font-family: "Noto Sans";
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  outline-offset: -2px;
+  padding: 0 13px;
+  justify-content: center;
+  display: inline-block;
+  line-height: 83px;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li a,
+#mc-header .header-content .mc-nav .mc-primarynav li span {
+  color: #fff;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li img {
+  filter: invert(0) brightness(2);
+  padding-left: 6px;
+  width: 13px;
+  height: 7px;
+  border-style: none;
+  vertical-align: middle;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li .mc-header-drop {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li span {
+  background-image: url(https://www.minecraft.net/content/dam/games/minecraft/logos/down-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: 100% 50%;
+  padding-right: 16px;
+  min-width: 79px;
+  font-family: "Noto Sans";
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li .mc-header-drop:active {
+  border: 0;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li:hover a,
+#mc-header .header-content .mc-nav .mc-primarynav li:hover span {
+  color: #a0e080;
+}
+#mc-header .header-content .mc-nav .mc-primarynav li:hover img {
+  filter: none;
+}
+#mc-header .button-header {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  float: right;
+  margin: 0;
+  line-height: 20px;
+}
+#mc-header .button-header:hover {
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  background-image: linear-gradient(#8d8e92, #e7eaef);
+  color: #252525;
+  text-shadow: 0 -1px 0 #e7eaef;
+  box-shadow: inset 0 -2px #e7eaef, inset 0 2px #8d8e92;
+}
+
+#mc-welcome-container {
+  display: flex;
+  justify-content: center;
+  background-color: #000 !important;
+  position: relative;
+}
+#mc-welcome-container .welcome-mine {
+  background-position: center;
+  background-image: url(https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 600px;
+}
+#mc-welcome-container .welcome-mine .getmine {
+  margin-top: 100px !important;
+  margin-left: 100px !important;
+  width: 540px;
+}
+#mc-welcome-container .welcome-mine .getmine h1 {
+  font-weight: 700;
+  color: white;
+}
+#mc-welcome-container .welcome-mine .getmine p {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: white;
+}
+
+.button-get-minecraft {
+  background: #3b8526;
+  color: #fff;
+  text-shadow: 0 1px 0 #2a631c;
+  margin: auto;
+  padding: 20px 40px;
+  border: none;
+  font-size: 1.5em;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: all;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+}
+
+.button-get-minecraft:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.login-container .login-microsoft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-transform: none !important;
+  color: #fff !important;
+  background-color: #3c8527;
+}
+.login-container a::before {
+  content: "Sign in with";
+  background-color: #3c8527;
+  z-index: -1;
+}
+.login-container .login-microsoft::after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.login-container .imgMSALoginButton {
+  height: 34px;
+  width: 94px;
+  margin-left: 4px;
+  vertical-align: middle;
+  border-style: none;
+}
+.login-container .my-3 {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #313131;
+  text-align: left;
+  font-family: Noto Sans, sans-serif;
+  box-sizing: border-box;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  color: #52a535;
+}
+.login-container .my-3 a {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: Noto Sans, sans-serif;
+  box-sizing: border-box;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+  flex-wrap: wrap !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: 0.8rem 1.5rem;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  text-transform: none !important;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  color: #fff !important;
+  cursor: pointer;
+  background-color: #2a5e1b;
+  border-color: #265419;
+}
+.login-container .my-3 a::after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+.login-container .my-3 a::hover::before {
+  background-color: #313131;
+}
+
+.BG-black {
+  width: 100%;
+  height: 1200px;
+  background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+  margin: 0px auto;
+  position: relative;
+}
+
+.explore-container {
+  padding-top: 55px;
+  text-align: center;
+}
+.explore-container .BG-white {
+  width: 1200px;
+  height: 700px;
+  background-color: #fafafa;
+  margin: 0 auto;
+}
+.explore-container .BG-white h6 {
+  font-family: "Lucida Sans Unicode";
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.explore-container .title-explore {
+  width: 1000px;
+  height: 40px;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.explore-container .title-explore .box-img {
+  margin-top: 50px;
+}
+.explore-container .title-explore .box-img .text-box-img {
+  margin-top: 30px;
+}
+.explore-container .title-explore .box-img span {
+  font-family: "Noto Sans";
+  color: #288123;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  height: 60px;
+}
+.explore-container .title-explore .box-img span:hover {
+  color: black;
+  text-decoration: underline;
+}
+.explore-container .title-explore .box-img img {
+  width: 210px;
+  height: 300px;
+  transition: 0.5s;
+}
+.explore-container .title-explore .box-img img:hover {
+  transform: scale(1.03);
+  border: 2px solid #84c94c;
+}
+.explore-container .title-explore .box-img p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.explore-container .NEWESTNEWS {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  margin-top: 600px;
+}
+.explore-container .imgnewst {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+.explore-container .box-img h2,
+.explore-container p {
+  margin: 15px auto;
+  width: 80%;
+}
+.explore-container .head-imgNEWESTNEWS {
+  display: flex;
+  flex-direction: row;
+  margin-top: 740px;
+  justify-content: center;
+}
+.explore-container .head-imgNEWESTNEWS img {
+  width: 270px;
+  height: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: inherit;
+  border: 2px solid white;
+}
+.explore-container .head-imgNEWESTNEWS img:hover {
+  border-radius: inherit;
+  border: 2px solid #84c94c;
+}
+.explore-container .head-imgNEWESTNEWS h {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.explore-container .head-imgNEWESTNEWS h:hover {
+  color: #84c94c !important;
+  cursor: pointer;
+}
+.explore-container .head-imgNEWESTNEWS .text-new {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-top {
+  background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
+  height: 100px;
+  display: block;
+  background-position-x: -710px;
+  background-repeat: repeat-x !important;
+  width: 100%;
+  margin-top: -1px;
+  margin-bottom: 50px;
+}
+
+.shop-game {
+  background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
+  height: 1550px;
+  width: 100%;
+  position: relative;
+}
+.shop-game .row-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.shop-game .row-page img {
+  width: 475px;
+  height: 285px;
+}
+.shop-game .row-page .row-page-text {
+  width: 445px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-right: 30px;
+}
+.shop-game .row-page a {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #196d17 !important;
+  content: "";
+  background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/link-arrow.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  padding-left: 22px;
+  background-size: 15px;
+  background-position-y: 2px;
+}
+.shop-game .row-page a p {
+  width: 100px;
+}
+
+.bottom-bg {
+  position: absolute;
+  bottom: 0;
+  float: left;
+  width: 100%;
+}
+.bottom-bg .bg-middle-top {
+  background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-bottom-darkwool.png);
+  width: 100%;
+  height: 100px;
+}
+.bottom-bg .bg-middle-bot {
+  background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-dark.png);
+  width: 100%;
+  height: 100px;
+}
+
+.text-com {
+  margin-top: 100px;
+  text-align: center;
+}
+
+p3 {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.text-com .explore {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #196d17 !important;
+  content: "";
+  background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/link-arrow.svg) no-repeat;
+  width: 15px;
+  height: 15px;
+  padding-left: 22px;
+  background-size: 15px;
+  background-position-y: 2px;
+}
+
+.community .text-com {
+  width: auto;
+}
+.community .text-com h3 {
+  font-weight: 700;
+}
+.community .text-com p3 {
+  font-weight: 500px;
+}
+.community .text-com .text-explore {
+  margin-top: 20px;
+}
+.community .img-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.community .img-bottom .img-box {
+  margin-left: 75px;
+  position: relative;
+}
+.community .img-bottom .img-box .img-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.community .img-bottom .img-box .img-text-overlay h {
+  font-weight: 900;
+  width: 90%;
+  text-align: center;
+}
+.community .img-bottom .img-box .img-text-overlay P {
+  font-weight: 500;
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+}
+.community .img-bottom .img-box .img-text-overlay:hover {
+  opacity: 1;
+  border: 2px solid #84c94c;
+}
+
+.button-load-more {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  margin: 0;
+  height: 60px;
+  width: 10%;
+  margin: auto;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+  margin-top: 50px;
+}
+.button-load-more p {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.button-load-more:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.text-bottom {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.linkfollow {
+  background-color: #000;
+  height: 150px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -60px;
+}
+.linkfollow img {
+  max-width: 35px;
+  height: 35px;
+}
+.linkfollow ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.linkfollow .icon-ig,
+.linkfollow .icon-fb,
+.linkfollow .icon-yt,
+.linkfollow .icon-tw,
+.linkfollow .icon-red {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+.linkfollow .icon-yt-hover,
+.linkfollow .icon-ig-hover,
+.linkfollow .icon-fb-hover,
+.linkfollow .icon-tw-hover,
+.linkfollow .icon-red-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.linkfollow .icon-yt-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.linkfollow .icon-ig-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.linkfollow .icon-fb-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.linkfollow .icon-tw-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.linkfollow .icon-red-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.linkfollow h5 {
+  color: #fff;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  margin-left: 40px;
+  font-size: 15px;
+  padding-top: 20px;
+}
+.linkfollow .icon-:hover {
+  background-image: url(https://dovu.vn/wp-content/uploads/2021/07/icon-youtube.png);
+}
+
+.mc-footer {
+  background-color: #111;
+  height: 100%;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mc-footer .mc-footer-copyright {
+  margin-top: 30px;
+}
+.mc-footer .mc-footer-copyright ul {
+  list-style: none;
+  margin-left: -40px;
+}
+.mc-footer .mc-footer-copyright a {
+  font-size: 0.75rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #a0e080;
+}
+.mc-footer .mc-footer-copyright p {
+  color: #a0e080;
+}
+.mc-footer .img-mojang-xbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.mc-footer .img-mojang-xbox .img-xbox {
+  margin-left: 60px;
+}
+
+.mc-footer-navi {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+.mc-footer-navi h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.mc-footer-navi div {
+  margin-top: 20px;
+}
+.mc-footer-navi ul {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.mc-footer-navi a {
+  font-size: 0.75rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #a0e080;
+}
+.mc-footer-navi a:hover {
+  color: white;
+}
+.mc-footer-navi .mc-footer-navi-column-mid {
+  margin-left: 100px;
+}
+.mc-footer-navi .mc-footer-navi-column-right {
+  margin-left: 100px;
+  width: 15vw;
+  margin-top: 40px;
+}
+
+.bg-login {
+  background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/msalogin-bg-glob.jpg);
+  width: 100%;
+  height: 1000px;
+  margin-bottom: -100px;
+  padding-top: 150px;
+}
+.bg-login .bg-white-login {
+  background-color: white;
+  width: 445px;
+  height: 600px;
+  margin: auto;
+  padding-top: 50px;
+}
+.bg-login .bg-white-login h {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: -20px;
+}
+.bg-login .bg-white-login .title-login {
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+}
+.bg-login .bg-white-login .button-get-minecraft {
+  width: 90%;
+  margin: auto;
+  height: 60px;
+  text-align: center;
+}
+.bg-login .bg-white-login .button-get-minecraft p {
+  font-size: medium;
+  width: 300px;
+}
+.bg-login .bg-white-login label {
+  margin: 20px 0 0 20px;
+}
+.bg-login .bg-white-login .text-signup-free {
+  display: flex;
+  margin: 20px 0 10px 22.246px;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+.bg-login .bg-white-login .text-login {
+  text-align: center;
+}
+.bg-login .bg-white-login .text-login p {
+  font-weight: 400;
+  margin: 0;
+}
+.bg-login .bg-white-login input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 90%;
+  height: 10%;
+  margin-left: 20px;
+  border: 1px solid #2a631c;
+  height: 36px;
+  padding: 8px;
+}
+.bg-login .bg-white-login a {
+  color: #2a5e1b;
+  text-decoration-line: underline;
+}
+.bg-login .bg-white-login a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.bg-login .bg-white-login .text-forgot {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+.bg-login .bg-white-login .button-login {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  text-align: center;
+  margin: 0;
+  line-height: 5px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #626262;
+  border-color: #5c5c5c;
+  box-shadow: inset 0 4px #a5a5a5, inset 0 -4px #202020;
+  -webkit-box-shadow: inset 0 4px #a5a5a5, inset 0 -4px #202020;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+}
+.bg-login .bg-white-login .button-login p {
+  color: black;
+  font-weight: 800;
+  margin-top: 15px;
+}
+.bg-login .bg-white-login .button-login:hover {
+  background-color: #313131;
+  border-color: #5c5c5c;
+}
+.bg-login .bg-white-login .button-login:hover p {
+  color: white;
+}
+
+.background-redeem {
+  background-color: #444444;
+  width: 100%;
+  height: 3700px;
+  margin-bottom: -50px;
+  text-align: center;
+  padding-top: 100px;
+}
+.background-redeem h {
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.background-redeem .row {
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+.background-redeem .row .redeem-card {
+  background-color: #f2e6ac;
+  width: 920px;
+  height: 470px;
+  margin-top: 100px;
+}
+.background-redeem .row .redeem-card .content-redeem {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  text-align: left;
+}
+.background-redeem .row .redeem-card .content-redeem img {
+  margin-left: 30px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content h {
+  display: inline-block;
+  color: #444;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  margin-left: 35px;
+  width: 500px;
+  height: 68px;
+  margin-bottom: 10px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .text-content-p {
+  margin-left: 35px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .text-content-p p {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #444444;
+  font-size: 15px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .text-content-p a {
+  color: #196d17;
+  text-decoration-line: underline;
+  font-weight: bolder;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .text-content-p a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form {
+  margin-left: 35px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form label {
+  color: #5a5a5a;
+  font-weight: bold;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form .input-submit {
+  display: flex;
+  margin-top: 20px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form .input-submit input {
+  width: 40%;
+  height: 60px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #7a7574;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form .input-submit p {
+  margin-top: 5px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form .input-submit .button-submit {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  margin: 0;
+  height: 60px;
+  width: 30%;
+  margin-left: 40px;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+}
+.background-redeem .row .redeem-card .content-redeem .text-content .form .input-submit .button-submit:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.background {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+}
+.background .img-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.background .img-title img {
+  width: 175px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+.background .img-title h {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.background .download {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.background .download .computer {
+  background-color: #f8f5f4;
+  height: 218px;
+  width: 245px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.background .download .img-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background .download .img-text h {
+  color: #606a6c;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 18px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.background .download .computer:hover {
+  border: 1px solid black;
+}
+
+.background-get-minecraft {
+  background-image: url(https://www.minecraft.net/content/dam/games/minecraft/background-images/hero-pdp-bg.png);
+  width: 100%;
+  height: 600px;
+  margin-bottom: -30px;
+  padding-top: 100px;
+}
+.background-get-minecraft .container-get-mc {
+  margin: 0 auto;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.background-get-minecraft .pic-text {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.background-get-minecraft .pic-text .text-content {
+  margin-left: 50px;
+  height: 380px;
+}
+.background-get-minecraft .pic-text h1 {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: white;
+  text-align: left;
+}
+.background-get-minecraft .pic-text p {
+  font-family: "Noto Sans";
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+  text-align: left;
+  margin-top: 50px;
+}
+.background-get-minecraft .pic-text .button-buy-minecraft {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  padding: 15px 30px;
+  font-size: 0.92em;
+  margin: 0;
+  height: 60px;
+  width: 300px;
+  margin-left: 40px;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+}
+.background-get-minecraft .pic-text .button-buy-minecraft p {
+  margin-left: 0;
+  margin-top: 0;
+  font-weight: 900;
+}
+.background-get-minecraft .pic-text .button-buy-minecraft:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+.background-get-minecraft .pic-text .text-button-price {
+  display: flex;
+  margin-left: -40px;
+}
+.background-get-minecraft .pic-text .text-button-price h {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.header-wrapper {
+  background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/Minecraft-KidsPromo_2022-Desktop_HomepageBanner-1920x1125-Banner1.jpg?v=1652297625);
+  width: 100%;
+  height: 900px;
+  padding-top: 400px;
+}
+.header-wrapper .text-header h1 {
+  margin-left: 30px;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0px 2px 0px #3c3837;
+  font-family: "Minecraft-Ten";
+}
+.header-wrapper .text-header .button-shop-now {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 0.92em;
+  margin: 0;
+  height: 80px;
+  width: 13%;
+  margin-left: 40px;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+  margin-top: 20px;
+}
+.header-wrapper .text-header .button-shop-now p {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 13px;
+  font-weight: 900;
+  font-size: larger;
+}
+.header-wrapper .text-header .button-shop-now:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.bg-green {
+  background-color: #3c8727;
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+}
+.bg-green .bg-white-cover {
+  background: url(//cdn.shopify.com/s/files/1/0266/4841/2351/t/24/assets/whiteBottomBlocks.png?v=9042973…);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.container-box {
+  background-color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+.container-box .collection-grid {
+  display: grid;
+  width: 1100px;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  gap: 25px;
+}
+.container-box .collection-grid .collection-img {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.container-box .collection-grid .collection-img img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+}
+.container-box .collection-grid .collection-img h3 {
+  font-weight: 100;
+  color: white;
+  width: auto;
+  font-family: "Minecraft-Ten";
+}
+.container-box .collection-grid .title-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.container-box .collection-grid .title-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.container-box .plush {
+  grid-column: 1/span 2;
+  grid-row: 2/span 3;
+}
+.container-box .plush img {
+  width: 725px !important;
+  height: 725px !important;
+}
+
+.shop-best-sellers {
+  text-align: center;
+  margin-top: 100px;
+}
+.shop-best-sellers h2 {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: "Minecraft-Ten";
+}
+.shop-best-sellers .collection-sellers {
+  margin-top: 100px;
+}
+.shop-best-sellers .collection-sellers img {
+  width: 250px;
+  height: 250px;
+}
+.shop-best-sellers .collection-sellers ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.shop-best-sellers .collection-sellers .collection-bundle,
+.shop-best-sellers .collection-sellers .collection-giftcard,
+.shop-best-sellers .collection-sellers .collection-hoodie,
+.shop-best-sellers .collection-sellers .collection-goat,
+.shop-best-sellers .collection-sellers .collection-watch {
+  margin-left: 60px;
+  margin-right: 60px;
+  position: relative;
+}
+.shop-best-sellers .collection-sellers .collection-bundle-hover,
+.shop-best-sellers .collection-sellers .collection-hoodie-hover,
+.shop-best-sellers .collection-sellers .collection-goat-hover,
+.shop-best-sellers .collection-sellers .collection-watch-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.shop-best-sellers .collection-sellers .collection-bundle-hover:hover,
+.shop-best-sellers .collection-sellers .collection-hoodie-hover:hover,
+.shop-best-sellers .collection-sellers .collection-goat-hover:hover,
+.shop-best-sellers .collection-sellers .collection-watch-hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.shop-best-sellers .text-collection {
+  display: flex;
+  justify-content: center;
+}
+.shop-best-sellers .text-collection .text-collection-bundle {
+  margin-top: 30px;
+  margin-left: 75px;
+  width: 400px;
+}
+.shop-best-sellers .text-collection h {
+  font-size: larger;
+  font-weight: 500;
+}
+.shop-best-sellers .text-collection p {
+  font-size: larger;
+}
+.shop-best-sellers .text-collection .text-price {
+  margin-top: 15px;
+}
+.shop-best-sellers .text-collection .fastship {
+  display: flex;
+  margin-left: 50px;
+}
+.shop-best-sellers .text-collection .fastship img {
+  height: 28px;
+  width: 28px;
+}
+.shop-best-sellers .text-collection .fastship p {
+  line-height: 2em;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f6d07;
+  margin-left: 50px;
+  margin-top: -8px;
+}
+
+.shop-best-sellers .bg-shop-toys {
+  margin-top: 100px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/MC-HP-Update_q2_22-Banner-TOYS-GROUP-Desktop_1944x.jpg?v=1648059411);
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding-top: 50px;
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys {
+  text-align: center;
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys h {
+  font-size: 50px !important;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 0px #3c3837;
+  font-family: "Minecraft-Ten";
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys p {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  font-family: "Minecraft-Ten";
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys .button-shop-now-middle {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  height: 80px;
+  width: 10%;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+  margin: auto;
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys .button-shop-now-middle a p {
+  width: 200px;
+  margin-left: -30px;
+  margin-top: 13px;
+  font-weight: 1200;
+  font-size: large;
+  font-family: NotoSans !important;
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys .button-shop-now-middle p {
+  width: 200px;
+  margin-left: -30px;
+  margin-top: 13px;
+  font-weight: 1200;
+  font-size: larger;
+  font-family: NotoSans !important;
+}
+.shop-best-sellers .bg-shop-toys .text-shop-toys .button-shop-now-middle:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.shop-collection-games .bg-shop-games {
+  background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/Rectangle_11_1944x.jpg?v=1648059422);
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+.shop-collection-games .bg-shop-games .text-shop-games {
+  text-align: center;
+}
+.shop-collection-games .bg-shop-games .text-shop-games h1 {
+  font-size: 50px !important;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 0px #3c3837;
+  font-family: "Minecraft-Ten";
+}
+.shop-collection-games .bg-shop-games .text-shop-games p {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  font-family: "Minecraft-Ten";
+}
+.shop-collection-games .bg-shop-games .text-shop-games .button-shop-now-middle {
+  padding: 15px 30px;
+  font-size: 0.92em;
+  height: 80px;
+  width: 10%;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+  margin: auto;
+}
+.shop-collection-games .bg-shop-games .text-shop-games .button-shop-now-middle p {
+  width: 200px;
+  margin-left: -30px;
+  margin-top: 13px;
+  font-weight: 900;
+  font-size: larger;
+  font-family: NotoSans !important;
+}
+.shop-collection-games .bg-shop-games .text-shop-games .button-shop-now-middle:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+
+.smart-watch {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.smart-watch .img-watch-left {
+  margin-left: 20px;
+}
+.smart-watch .img-watch-middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.smart-watch .img-watch-middle img {
+  width: 76px;
+  height: 76px;
+  margin-top: 30px;
+}
+.smart-watch .img-watch-middle img:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.smart-watch .text-right {
+  margin-left: 50px;
+}
+.smart-watch .text-right .title-text-right {
+  text-align: left;
+}
+.smart-watch .text-right .title-text-right h {
+  color: #054b16;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Minecraft-Ten";
+}
+.smart-watch .text-right .text-price-right {
+  text-align: left;
+  margin-top: 20px;
+}
+.smart-watch .text-right .text-price-right h {
+  color: #054b16;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.smart-watch .text-right .fields {
+  text-align: left;
+  margin-top: 20px;
+}
+.smart-watch .text-right .fields .options {
+  display: flex;
+}
+.smart-watch .text-right .fields .options #quantityF {
+  margin-left: 20px;
+  margin-top: -15px;
+}
+.smart-watch .text-right .fields span, .smart-watch .text-right .fields p {
+  color: 454442;
+  font-weight: 600;
+}
+.smart-watch .text-right .button-addtocart {
+  text-align: left;
+  padding: 15px 30px;
+  font-size: 0.92em;
+  height: 50px;
+  width: 20%;
+  cursor: pointer;
+  background-color: #3b8526;
+  transition: all 0.25s, opacity 0.75s 0.5s;
+  box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+  color: white;
+  margin-left: 0;
+  margin-top: 20px;
+}
+.smart-watch .text-right .button-addtocart p {
+  width: 200px;
+  margin-left: 0;
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.smart-watch .text-right .button-addtocart:hover {
+  background: #171615;
+  background-image: linear-gradient(#3d3938, #171615);
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  border: none;
+  box-shadow: inset 0 0 #fff, inset 0 0 #000;
+  color: #fff;
+}
+.smart-watch .text-right .text-top {
+  text-align: left;
+  margin-top: 20px;
+}
+.smart-watch .text-right ul {
+  text-align: left;
+}
+
+.video {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.header-shop {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background: #3C8727;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-shop h1 {
+  font-family: "Minecraft-Ten";
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3%;
+}
+.header-shop .img-header {
+  background: url(//cdn.shopify.com/s/files/1/0266/4841/2351/t/27/assets/whiteBottomBlocks.png?v=9042973…);
+  width: 180px;
+  height: 90px;
+  margin-left: 50px;
+}
+
+.cartegory {
+  margin-top: 55px;
+  display: flex;
+}
+.cartegory .cartegory-left {
+  margin-left: 30px;
+}
+.cartegory .cartegory-left h1 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 200px;
+}
+.cartegory .cartegory-left ul {
+  list-style: none;
+}
+.cartegory .cartegory-left ul a {
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #000;
+}
+.cartegory .cartegory-left ul a:hover {
+  color: #3c8727;
+}
+.cartegory .cartegory-left hr {
+  align-items: left;
+  size: 10px;
+}
+.cartegory .cartegory-right {
+  margin-left: 3%;
+  justify-content: space-between;
+}
+.cartegory .cartegory-right .cartegory-items {
+  width: calc(33% - 12px);
+  text-align: center;
+  /*.img-items-hover{
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+  }
+  .img-items-hover:hover{
+      opacity: 1;
+      cursor: pointer;
+  }
+   */
+}
+.cartegory .cartegory-right .cartegory-items h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.cartegory .cartegory-right .cartegory-items img {
+  width: 75%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+h1{
+    font-family:'Lucida Sans Unicode' ;
+    text-align: center;
+}
+h2{
+    font-family: 'Noto Sans' ;
+    color:darkgreen;
+    font-size: 18px;
+
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+p{
+   font-family: Arial, Helvetica, sans-serif; 
+
+}
+
+.EXPLOREMINECRAFTGAMES img{
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+#wrapper{
+    position: relative;
+}
+
+.NEWESTNEWS{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin-top: 600px;
+}
+.imgnewst{
+    position:absolute ;
+    text-align: center;
+    bottom: 0;
+}
+.box-img h2,p{
+        
+        margin:15px auto;
+        width: 80%;
+        
+}
+.head-imgNEWESTNEWS{
+    display: flex;
+    flex-direction: row;
+    margin-top: 740px;
+    justify-content: center;
+}
+
+.head-imgNEWESTNEWS .imgNEWESTNEWS{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h4{
+    color: white;
+    margin: 0  auto;
+    text-align: center;
+    font-size: 18px;
+}
+.box-img img{
+	transition: all .3s ease;
+}
+
+.box-img img:hover{
+	transform: scale(1.1); /* cỡ zoom khi di chuột vào */
+} 
+.box-img div{
+	overflow: hidden;
+}
+h4:hover{
+    color:#84c94c!important;
+    text-decoration: underline;
+}
+h2:hover{
+    color: black;
+    text-decoration: underline;
+}
+.box-img a{
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,52 @@
+body{
+    font-family: Noto Sans, sans-serif;
+}
+#header{
+    font-size: large;
+    background-color: #171615;
+}
+
+h1,p{
+    color: #FFF;
+}
+
+
+.welcome-mine{
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg);
+    height: 600px;
+
+}
+.button-get-minecraft{
+    background: #3b8526;
+    -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%);
+    box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%);
+    color: #fff;
+    text-shadow: 0 1px 0 #2a631c;
+    margin: auto;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.5em;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all .25s,opacity .75s .5s;
+    transition: all .25s,opacity .75s .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+}
+.button-get-minecraft:hover{
+    background: #171615;
+    background-image: linear-gradient(#3d3938,#171615);
+    text-shadow: 0 1px 0 #000;
+    text-decoration: none;
+    border: none;
+    -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+    box-shadow: inset 0 0 #fff, inset 0 0 #000;
+    color: #FFF;
+}

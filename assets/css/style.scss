@@ -1,0 +1,1972 @@
+@font-face {
+    font-family: 'Minecraft-Ten';
+    src: url(/assets/fonts/MinecraftTen-VGORe.ttf)
+  }
+
+
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+
+    ul {
+        margin: 0;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+  
+//TOP HEADER
+.mc-globalbanner {
+    width: 100%;
+    min-height: 35px;
+    background-color: #000;
+    display: flex;
+    padding: 9px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: -1px;
+    height: auto;
+    float: right;
+    position: relative;
+
+    ul {
+        position: relative;
+        width: 50%;
+        justify-content: end;
+        align-items: center;
+        margin-left: auto;
+
+        .mc-login,
+        .mc-redeem {
+            list-style: none;
+            min-width: 80px;
+            height: 100%;
+
+            a {
+                height: 100%;
+                background-color: transparent;
+                color: #a0e080;
+                border: 0;
+
+                font-style: normal;
+                font-weight: 700;
+                font-family: "Noto Sans";
+                font-size: 0.825rem;
+                letter-spacing: 0.08em;
+                text-align: center;
+                text-transform: uppercase;
+                outline-offset: -2px;
+                float: right;
+            }
+
+            a:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .mc-global {
+            display: inline;
+        }
+
+        .mc-redeem a {
+            margin-left: 15px;
+        }
+    }
+}
+
+//HEADER
+#mc-header {
+    font-size: large;
+    background-color: #171615;
+    padding: 0 13px;
+    height: 83px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+
+    .header-content {
+        .mc-nav {
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            min-height: 83px;
+
+            .mc-logo {
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+                display: inline-flex;
+
+                img {
+                    aspect-ratio: auto 2/1;
+                    max-width: 300px;
+                    height: 40px;
+                    width: auto;
+                }
+            }
+
+            .mc-primarynav {
+                height: 100%;
+
+                ul {
+                    padding-left: 0;
+                    display: inline-flex;
+                    margin-bottom: 0;
+                    min-height: 83px;
+                }
+
+                li {
+                    list-style: none;
+                    min-width: 79px;
+                    font-family: "Noto Sans";
+                    font-size: 0.8rem;
+                    letter-spacing: 0.08em;
+                    font-weight: 700;
+                    text-align: center;
+                    text-transform: uppercase;
+                    outline-offset: -2px;
+                    padding: 0 13px;
+                    justify-content: center;
+                    display: inline-block;
+                    line-height: 83px;
+
+                    a,
+                    span {
+                        color: #fff;
+                    }
+
+                    img {
+                        filter: invert(0) brightness(2);
+                        padding-left: 6px;
+                        width: 13px;
+                        height: 7px;
+                        border-style: none;
+                        vertical-align: middle;
+                    }
+
+                    .mc-header-drop {
+                        cursor: pointer;
+                        position: relative;
+                        height: 100%;
+                        background-color: transparent;
+                        border: 0;
+                        border-radius: 0;
+                        outline: none;
+                    }
+
+                    span {
+                        background-image: url(https://www.minecraft.net/content/dam/games/minecraft/logos/down-arrow.png);
+                        background-repeat: no-repeat;
+                        background-size: 10px 6px;
+                        background-position: 100% 50%;
+                        padding-right: 16px;
+                        min-width: 79px;
+                        font-family: "Noto Sans";
+                        font-size: 0.8rem;
+                        letter-spacing: 0.08em;
+                        font-weight: 700;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    .mc-header-drop:active{
+                        border: 0;
+                    }
+                }
+
+                li:hover {
+
+                    a,
+                    span {
+                        color: #a0e080;
+                    }
+
+                    img {
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-header {
+        padding: 15px 30px;
+        font-size: 0.92em;
+        float: right;
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .button-header:hover {
+        transition: all 0.25s, opacity 0.75s 0.5s;
+        background-image: linear-gradient(#8d8e92, #e7eaef);
+        color: #252525;
+        text-shadow: 0 -1px 0 #e7eaef;
+        box-shadow: inset 0 -2px #e7eaef, inset 0 2px #8d8e92;
+    }
+}
+
+//welcome
+#mc-welcome-container {
+    display: flex;
+    justify-content: center;
+    background-color: #000 !important;
+    position: relative;
+
+    .welcome-mine {
+        background-position: center;
+        background-image: url(https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1200px;
+        height: 600px;
+
+        .getmine {
+            margin-top: 100px !important;
+            margin-left: 100px !important;
+            width: 540px;
+
+            h1 {
+                font-weight: 700;
+                color: white;
+            }
+
+            p {
+                font-size: 1.2em;
+                font-weight: 400;
+                color: white;
+            }
+        }
+    }
+}
+
+// FANCY GET MINECRAFT BUTTON
+.button-get-minecraft {
+    background: #3b8526;
+
+    color: #fff;
+    text-shadow: 0 1px 0 #2a631c;
+    margin: auto;
+    padding: 20px 40px;
+    border: none;
+    font-size: 1.5em;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+    transition: all 0.25s, opacity 0.75s 0.5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: all;
+    box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+    -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+}
+
+.button-get-minecraft:hover {
+    background: #171615;
+    background-image: linear-gradient(#3d3938, #171615);
+    text-shadow: 0 1px 0 #000;
+    text-decoration: none;
+    border: none;
+    -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+    box-shadow: inset 0 0 #fff, inset 0 0 #000;
+    color: #fff;
+}
+
+//END BUTTON
+
+//LOGIN HTML
+.login-container {
+    .login-microsoft {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: 0;
+        z-index: 1;
+        user-select: none;
+        text-transform: none !important;
+        color: #fff !important;
+        background-color: #3c8527;
+    }
+
+    a::before {
+        content: "Sign in with";
+        background-color: #3c8527;
+        // box-shadow: inset 0 -4px rgb(0 0 0 / 25%), inset 0 4px hsl(0deg 0% 100% / 35%),
+        //     inset -4px 0 hsl(0deg 0% 100% / 35%), inset 4px 0 rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+
+    .login-microsoft::after {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        // transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+        // box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    }
+
+    .imgMSALoginButton {
+        height: 34px;
+        width: 94px;
+        margin-left: 4px;
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    .my-3 {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #313131;
+        text-align: left;
+        font-family: Noto Sans, sans-serif;
+        box-sizing: border-box;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        color: #52a535;
+
+        a {
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-family: Noto Sans, sans-serif;
+            box-sizing: border-box;
+            font-weight: 700;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out;
+            width: 100%;
+            flex-wrap: wrap !important;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 0;
+            z-index: 1;
+            user-select: none;
+            letter-spacing: 1px;
+            white-space: unset;
+            padding: 0.8rem 1.5rem;
+            text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+            text-transform: none !important;
+            text-decoration: none;
+            outline: none;
+            box-shadow: none;
+            color: #fff !important;
+            cursor: pointer;
+            background-color: #2a5e1b;
+            border-color: #265419;
+        }
+
+        a::after {
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            content: "";
+            transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+            // box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+        }
+
+        a::hover::before {
+            background-color: #313131;
+            // box-shadow: inset 0 -4px rgb(0 0 0 / 35%), inset 0 4px hsl(0deg 0% 100% / 25%),
+            //     inset -4px 0 hsl(0deg 0% 100% / 25%), inset 4px 0 rgb(0 0 0 / 35%);
+        }
+    }
+}
+
+.BG-black {
+    width: 100%;
+    height: 1200px;
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+    margin: 0px auto;
+    position: relative;
+}
+
+.explore-container {
+    padding-top: 55px;
+    text-align: center;
+
+    .BG-white {
+        width: 1200px;
+        height: 700px;
+        background-color: #fafafa;
+        margin: 0 auto;
+
+        h6 {
+            font-family: "Lucida Sans Unicode";
+            text-align: center;
+            padding-top: 50px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+
+    .title-explore {
+        width: 1000px;
+        height: 40px;
+        margin: 0px auto;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        .box-img {
+            margin-top: 50px;
+
+            .text-box-img {
+                margin-top: 30px;
+            }
+
+            span {
+                font-family: "Noto Sans";
+                color: #288123;
+                font-size: 20px;
+                font-weight: 700;
+                display: inline-block;
+                height: 60px;
+            }
+
+            span:hover {
+                color: black;
+                text-decoration: underline;
+            }
+
+            img {
+                width: 210px;
+                height: 300px;
+                transition: 0.5s;
+            }
+
+            img:hover {
+                -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+                border: 2px solid #84c94c;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+
+    .NEWESTNEWS {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: white;
+        margin-top: 600px;
+    }
+
+    .imgnewst {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+    }
+
+    .box-img h2,
+    p {
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .head-imgNEWESTNEWS {
+        // display: -webkit-box;
+        // display: -ms-flexbox;
+        display: flex;
+        // -webkit-box-orient: horizontal;
+        // -webkit-box-direction: normal;
+        //     -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 740px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        img {
+            width: 270px;
+            height: 150px;
+            margin-left: 40px;
+            margin-right: 40px;
+
+            border-radius: inherit;
+            border: 2px solid white;
+        }
+
+        img:hover {
+            border-radius: inherit;
+            border: 2px solid #84c94c;
+        }
+
+        h {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        h:hover {
+            color: #84c94c !important;
+            cursor: pointer;
+        }
+
+        .text-new {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+//FIX THIS SHIT HOLE FROM HERE
+.container-top {
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
+    height: 100px;
+    display: block;
+    background-position-x: -710px;
+    background-repeat: repeat-x !important;
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: 50px;
+}
+
+.shop-game {
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
+    height: 1550px;
+    width: 100%;
+    position: relative;
+
+    .row-page {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+        img {
+            width: 475px;
+            height: 285px;
+        }
+
+        .row-page-text {
+            width: 445px;
+            height: 60px;
+            margin-left: 30px;
+            margin-top: 60px;
+            margin-right: 30px;
+        }
+
+        a {
+            font-family: "Noto Sans";
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            color: #196d17 !important;
+
+            content: "";
+            background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/link-arrow.svg) no-repeat;
+            width: 30px;
+            height: 30px;
+            padding-left: 22px;
+            background-size: 15px;
+            background-position-y: 2px;
+
+            p {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.bottom-bg {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    width: 100%;
+
+    .bg-middle-top {
+        background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-bottom-darkwool.png);
+        width: 100%;
+        height: 100px;
+    }
+
+    .bg-middle-bot {
+        background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-dark.png);
+        width: 100%;
+        height: 100px;
+    }
+}
+
+.text-com {
+    margin-top: 100px;
+    text-align: center;
+}
+
+p3 {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.text-com .explore {
+    font-family: "Noto Sans";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #196d17 !important;
+
+    content: "";
+    background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/link-arrow.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    padding-left: 22px;
+    background-size: 15px;
+    background-position-y: 2px;
+}
+
+.community{
+    .text-com{
+        width: auto;
+        h3{
+            font-weight: 700;
+        }
+        p3{
+            font-weight: 500px;
+        }
+        
+        .text-explore{
+            margin-top: 20px;
+        }
+    }
+    .img-bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        .img-box{
+            margin-left: 75px;
+            position: relative;               
+            .img-text-overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    color: #ffffff;
+                    font-family: 'Quicksand', sans-serif;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+
+                    h{
+                        font-weight: 900;
+                        width: 90%;
+                        text-align: center;
+                    }
+                    P{
+                        font-weight: 500;
+                        width: 90%;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                }
+
+            .img-text-overlay:hover{
+                    opacity: 1;
+                    border: 2px solid #84c94c;
+
+                }
+            }
+        }
+    }
+
+.button-load-more {
+        padding: 15px 30px;
+        font-size: 0.92em;
+        margin: 0;
+        height: 60px;
+        width: 10%;
+        margin: auto;
+        cursor: pointer;
+        background-color: #3b8526;
+        -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+        transition: all 0.25s, opacity 0.75s 0.5s;
+        box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+        -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+        color: white;
+
+        margin-top: 50px;
+
+        p{
+            text-align: center;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+}
+
+.button-load-more:hover {
+        background: #171615;
+        background-image: linear-gradient(#3d3938, #171615);
+        text-shadow: 0 1px 0 #000;
+        text-decoration: none;
+        border: none;
+        -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+        box-shadow: inset 0 0 #fff, inset 0 0 #000;
+        color: #fff;
+}
+
+.text-bottom{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    font-style: italic;
+
+    margin-top: 50px;
+}
+
+
+
+.linkfollow {
+    background-color: #000;
+    height: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -60px;
+
+    img {
+        max-width: 35px;
+        height: 35px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .icon-ig,
+    .icon-fb,
+    .icon-yt,
+    .icon-tw,
+    .icon-red {
+        margin-left: 50px;
+        margin-right: 50px;
+        position: relative;
+    }
+
+    .icon-yt-hover,
+    .icon-ig-hover,
+    .icon-fb-hover,
+    .icon-tw-hover,
+    .icon-red-hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .icon-yt-hover:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .icon-ig-hover:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .icon-fb-hover:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .icon-tw-hover:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .icon-red-hover:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    h5 {
+        color: #fff;
+        font-family: "Noto Sans";
+        font-weight: 700;
+        margin-left: 40px;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    .icon-:hover {
+        background-image: url(https://dovu.vn/wp-content/uploads/2021/07/icon-youtube.png);
+    }
+}
+
+.mc-footer {
+    background-color: #111;
+    height: 100%;
+    margin-top: 50px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    .mc-footer-copyright {
+        margin-top: 30px;
+
+        ul {
+            list-style: none;
+            margin-left: -40px;
+        }
+
+        a {
+            font-size: 0.75rem;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+            color: #a0e080;
+        }
+
+        p {
+            color: #a0e080;
+        }
+    }
+
+    .img-mojang-xbox {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 50px;
+
+        .img-xbox {
+            margin-left: 60px;
+        }
+    }
+}
+
+.mc-footer-navi {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 100px;
+    margin-bottom: 80px;
+
+    h4 {
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    div {
+        margin-top: 20px;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: -40px;
+        margin-top: -10px;
+    }
+
+    a {
+        font-size: 0.75rem;
+        transition: 0.5s ease-in-out;
+        text-decoration: none;
+        color: #a0e080;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .mc-footer-navi-column-mid {
+        margin-left: 100px;
+    }
+
+    .mc-footer-navi-column-right {
+        margin-left: 100px;
+        width: 15vw;
+        margin-top: 40px;
+    }
+}
+
+
+
+//STARR LOGIN
+.bg-login {
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/msalogin-bg-glob.jpg);
+    width: 100%;
+    height: 1000px;
+    margin-bottom: -100px;
+    padding-top: 150px;
+
+    .bg-white-login {
+        background-color: white;
+        width: 445px;
+        height: 600px;
+        margin: auto;
+        padding-top: 50px;
+
+        h {
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: -20px;
+        }
+
+        .title-login {
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+        }
+
+
+        .button-get-minecraft {
+            width: 90%;
+            margin: auto;
+            height: 60px;
+            text-align: center;
+
+            p {
+                font-size: medium;
+                width: 300px;
+
+            }
+        }
+
+        label {
+            margin: 20px 0 0 20px;
+        }
+
+        .text-signup-free {
+            display: flex;
+            margin: 20px 0 10px 22.246px;
+            justify-content: center;
+            margin-bottom: -20px;
+
+        }
+
+        .text-login {
+            text-align: center;
+
+            p {
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+
+        input {
+            position: relative;
+            flex: 1 1 auto;
+            width: 90%;
+            height: 10%;
+            margin-left: 20px;
+            border: 1px solid #2a631c;
+            height: 36px;
+            padding: 8px;
+
+        }
+
+        a {
+            color: #2a5e1b;
+            text-decoration-line: underline;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #000;
+        }
+
+        .text-forgot {
+            text-align: right;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+
+        .button-login {
+            padding: 15px 30px;
+            font-size: 0.92em;
+            text-align: center;
+            margin: 0;
+            line-height: 5px;
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #626262;
+            border-color: #5c5c5c;
+            box-shadow: inset 0 4px #a5a5a5, inset 0 -4px #202020;
+            -webkit-box-shadow: inset 0 4px #a5a5a5, inset 0 -4px #202020;
+            -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+            transition: all 0.25s, opacity 0.75s 0.5s;
+
+            p {
+                color: black;
+                font-weight: 800;
+                margin-top: 15px;
+
+            }
+
+        }
+
+        .button-login:hover {
+            background-color: #313131;
+            border-color: #5c5c5c;
+
+            p {
+                color: white;
+            }
+
+        }
+    }
+}
+
+//END LOGIN
+
+//START REDEEM
+.background-redeem {
+    background-color: #444444;
+    width: 100%;
+    height: 3700px;
+    margin-bottom: -50px;
+    text-align: center;
+    padding-top: 100px;
+
+    h {
+        color: white;
+        font-family: "Noto Sans";
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .row {
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-right: 0;
+        margin-left: 0;
+
+
+        .redeem-card {
+            background-color: #f2e6ac;
+            width: 920px;
+            height: 470px;
+            margin-top: 100px;
+
+            .content-redeem {
+                margin-top: 35px;
+                display: flex;
+                justify-content: center;
+                margin-left: 0;
+                text-align: left;
+
+                img{
+                    margin-left: 30px;
+                }
+
+                .text-content {
+                    h {
+                        display: inline-block;
+                        color: #444;
+                        font-family: "Noto Sans";
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 34px;
+                        margin-left: 35px;
+                        width: 500px;
+                        height: 68px;
+                        margin-bottom: 10px;
+                    }
+
+                    .text-content-p {
+                        margin-left: 35px;
+
+                        p {
+                            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                            line-height: 1.5;
+                            color: #444444;
+                            font-size: 15px;
+
+                        }
+
+                        a {
+                            color: #196d17;
+                            text-decoration-line: underline;
+                            font-weight: bolder;
+                        }
+
+                        a:hover {
+                            color: #fff;
+                            background-color: #000;
+                        }
+                    }
+
+                    .form {
+                        margin-left: 35px;
+
+                        label {
+                            color: #5a5a5a;
+                            font-weight: bold;
+                        }
+
+                        .input-submit {
+                            display: flex;
+                            margin-top: 20px;
+
+                            input {
+                                width: 40%;
+                                height: 60px;
+                                text-align: center;
+                                background: #fff;
+                                border: 1px solid #7a7574;
+                            }
+
+                            p {
+                                margin-top: 5px;
+                                font-family: Noto Sans, sans-serif;
+                                font-size: 18px;
+                                line-height: 20px;
+                                font-weight: 700;
+                                margin-left: 20px;
+
+                            }
+
+                            .button-submit {
+                                padding: 15px 30px;
+                                font-size: 0.92em;
+                                margin: 0;
+                                height: 60px;
+                                width: 30%;
+                                margin-left: 40px;
+                                cursor: pointer;
+                                background-color: #3b8526;
+                                -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+                                transition: all 0.25s, opacity 0.75s 0.5s;
+                                box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                                -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                                color: white;
+                            }
+
+                            .button-submit:hover {
+                                background: #171615;
+                                background-image: linear-gradient(#3d3938, #171615);
+                                text-shadow: 0 1px 0 #000;
+                                text-decoration: none;
+                                border: none;
+                                -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                                box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//END REDEEM
+
+//START GET MINECRAFT
+
+.background {
+    background-color: white;
+    width: 100%;
+    height: 600px;
+
+    .img-title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        img {
+            width: 175px;
+            margin-bottom: 25px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h {
+            font-family: "Noto Sans";
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+    }
+
+    .download {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+
+        .computer {
+            background-color: #f8f5f4;
+            height: 218px;
+            width: 245px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+
+        .img-text {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h {
+                color: #606a6c;
+                font-family: "Noto Sans";
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 18px;
+                padding-bottom: 25px;
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+        }
+
+        .computer:hover {
+            border: 1px solid black;
+        }
+
+    }
+}
+
+//START GET MINECRAFT COMPUTER
+.background-get-minecraft {
+    background-image: url(https://www.minecraft.net/content/dam/games/minecraft/background-images/hero-pdp-bg.png);
+    width: 100%;
+    height: 600px;
+    margin-bottom: -30px;
+    padding-top: 100px;
+
+    .container-get-mc {
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .pic-text {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        .text-content {
+            margin-left: 50px;
+            height: 380px;
+        }
+
+        h1 {
+            font-family: "Noto Sans";
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            color: white;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Noto Sans";
+            font-size: 18px;
+            line-height: 26px;
+            color: white;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .button-buy-minecraft {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            padding: 15px 30px;
+            font-size: 0.92em;
+            margin: 0;
+            height: 60px;
+            width: 300px;
+            margin-left: 40px;
+            cursor: pointer;
+            background-color: #3b8526;
+            -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+            transition: all 0.25s, opacity 0.75s 0.5s;
+            box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            color: white;
+
+            p {
+
+                margin-left: 0;
+                margin-top: 0;
+                font-weight: 900;
+            }
+
+        }
+
+        .button-buy-minecraft:hover {
+            background: #171615;
+            background-image: linear-gradient(#3d3938, #171615);
+            text-shadow: 0 1px 0 #000;
+            text-decoration: none;
+            border: none;
+            -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            color: #fff;
+
+        }
+
+        .text-button-price{
+            display: flex;
+            margin-left: -40px;
+            h{
+                font-family: "Noto Sans";
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 40px;
+                letter-spacing: 1px;
+                color: white;
+
+            }
+        }
+    }
+}
+
+//START SHOP 
+
+.header-wrapper {
+    background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/Minecraft-KidsPromo_2022-Desktop_HomepageBanner-1920x1125-Banner1.jpg?v=1652297625);
+    width: 100%;
+    height: 900px;
+    padding-top: 400px;
+
+    .text-header {
+        h1 {
+            margin-left: 30px;
+            font-size: 50px;
+            color: #ffffff;
+            text-shadow: 0px 2px 0px #3c3837;
+            font-family: 'Minecraft-Ten';
+        }
+
+        .button-shop-now {
+            display: flex;
+            justify-content: center;
+
+            padding: 15px 30px;
+            font-size: 0.92em;
+            margin: 0;
+            height: 80px;
+            width: 13%;
+            margin-left: 40px;
+            cursor: pointer;
+            background-color: #3b8526;
+            -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+            transition: all 0.25s, opacity 0.75s 0.5s;
+            box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            color: white;
+
+            margin-top: 20px;
+
+            p {
+                width: 200px;
+                display: inline-block;
+                text-align: center;
+                margin-top: 13px;
+                font-weight: 900;
+                font-size: larger;
+            }
+
+        }
+
+        .button-shop-now:hover {
+            background: #171615;
+            background-image: linear-gradient(#3d3938, #171615);
+            text-shadow: 0 1px 0 #000;
+            text-decoration: none;
+            border: none;
+            -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            color: #fff;
+        }
+
+    }
+}
+
+
+
+
+.bg-green {
+    background-color: #3c8727;
+    width: 100%;
+    height: 150px;
+    padding-top: 50px;
+
+
+
+    .bg-white-cover {
+        background: url(//cdn.shopify.com/s/files/1/0266/4841/2351/t/24/assets/whiteBottomBlocks.png?v=9042973…);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 100px;
+        margin-left: 50px;
+
+    }
+}
+
+.container-box {
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+
+    .collection-grid {
+        display: grid;
+        width: 1100px;
+        grid-template-columns: auto auto auto;
+        padding: 20px;
+        gap: 25px;
+
+        .collection-img {
+            position: relative;
+            width: 350px;
+            height: 350px;
+
+            img {
+                width: 350px;
+                height: 350px;
+                position: absolute;
+                top: 0;
+
+            }
+            h3 {
+           
+                font-weight: 100;
+                color: white;
+                width: auto;
+                font-family: 'Minecraft-Ten';
+            }
+
+        }
+        .title-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .title-overlay:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        
+    }
+
+        .plush{
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 3;
+
+            img {
+                width: 725px!important;
+                height: 725px!important;
+            }
+
+        }
+}
+
+
+.shop-best-sellers {
+    text-align: center;
+    margin-top: 100px;
+
+    h2 {
+        font-size: 2em;
+        font-weight: 500;
+        font-family:'Minecraft-Ten';
+    }
+
+    .collection-sellers {
+        margin-top: 100px;
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .collection-bundle,
+        .collection-giftcard,
+        .collection-hoodie,
+        .collection-goat,
+        .collection-watch {
+            margin-left: 60px;
+            margin-right: 60px;
+            position: relative;
+        }
+
+        .collection-bundle-hover,
+        .collection-hoodie-hover,
+        .collection-goat-hover,
+        .collection-watch-hover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        .collection-bundle-hover:hover,
+        .collection-hoodie-hover:hover,
+        .collection-goat-hover:hover,
+        .collection-watch-hover:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    .text-collection {
+        display: flex;
+        justify-content: center;
+
+        .text-collection-bundle {
+            margin-top: 30px;
+            margin-left: 75px;
+            width: 400px;
+        }
+
+        h {
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        .text-price{
+            margin-top: 15px;
+        }
+
+        .fastship {
+            display: flex;
+            margin-left: 50px;
+
+            img {
+                height: 28px;
+                width: 28px;
+            }
+
+            p {
+                line-height: 2em;
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f6d07;
+                margin-left: 50px;
+                margin-top: -8px;
+            }
+
+        }
+    }
+
+}
+
+.shop-best-sellers {   
+    .bg-shop-toys {
+        margin-top: 100px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/MC-HP-Update_q2_22-Banner-TOYS-GROUP-Desktop_1944x.jpg?v=1648059411);
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        padding-top: 50px;
+
+        .text-shop-toys {
+            text-align: center;
+
+            h {
+                font-size: 50px !important;
+                color: white;
+                font-weight: bold;
+                text-shadow: 0px 2px 0px #3c3837;
+                font-family:'Minecraft-Ten'
+            }
+
+            p {
+                font-size: 30px;
+                color: white;
+                font-weight: normal;
+                font-family:'Minecraft-Ten'
+            }
+
+            .button-shop-now-middle {
+                padding: 15px 30px;
+                font-size: 0.92em;
+                height: 80px;
+                width: 10%;
+                cursor: pointer;
+                background-color: #3b8526;
+                -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+                transition: all 0.25s, opacity 0.75s 0.5s;
+                box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                color: white;
+                margin: auto;
+                a{
+                    p{
+                        width: 200px;
+                        margin-left: -30px;
+                        margin-top: 13px;
+                        font-weight: 1200;
+                        font-size:large;
+                        font-family: NotoSans!important;
+                    }
+                }
+
+                p {
+                    width: 200px;
+                    margin-left: -30px;
+                    margin-top: 13px;
+                    font-weight: 1200;
+                    font-size: larger;
+                    font-family: NotoSans!important;
+                }
+
+            }
+
+            .button-shop-now-middle:hover {
+                background: #171615;
+                background-image: linear-gradient(#3d3938, #171615);
+                text-shadow: 0 1px 0 #000;
+                text-decoration: none;
+                border: none;
+                -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.shop-collection-games{
+    .bg-shop-games{
+        background-image: url(https://cdn.shopify.com/s/files/1/0266/4841/2351/files/Rectangle_11_1944x.jpg?v=1648059422);
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 100px;
+
+        .text-shop-games {
+            text-align: center;
+
+            h1 {
+                font-size: 50px !important;
+                color: white;
+                font-weight: bold;
+                text-shadow: 0px 2px 0px #3c3837;
+                font-family:'Minecraft-Ten'
+            }
+
+            p {
+                font-size: 30px;
+                color: white;
+                font-weight: normal;
+                font-family:'Minecraft-Ten';
+            }
+
+            .button-shop-now-middle {
+                padding: 15px 30px;
+                font-size: 0.92em;
+                height: 80px;
+                width: 10%;
+                cursor: pointer;
+                background-color: #3b8526;
+                -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+                transition: all 0.25s, opacity 0.75s 0.5s;
+                box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+                color: white;
+                margin: auto;
+
+
+                p {
+                    width: 200px;
+                    margin-left: -30px;
+                    margin-top: 13px;
+                    font-weight: 900;
+                    font-size: larger;
+                    font-family: NotoSans!important;
+                }
+
+            }
+
+            .button-shop-now-middle:hover {
+                background: #171615;
+                background-image: linear-gradient(#3d3938, #171615);
+                text-shadow: 0 1px 0 #000;
+                text-decoration: none;
+                border: none;
+                -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                box-shadow: inset 0 0 #fff, inset 0 0 #000;
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+.smart-watch{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    .img-watch-left{
+        margin-left: 20px;
+    }
+
+    .img-watch-middle{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        img{
+            width: 76px;
+            height: 76px;
+            margin-top: 30px;
+        }
+        img:hover{
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    }
+
+    .text-right{
+        margin-left: 50px;
+        .title-text-right{
+            text-align: left;
+            h{
+                color: #054b16;
+                font-weight: bolder;
+                font-size: 25px;
+                font-family:'Minecraft-Ten'
+            }
+        }
+        .text-price-right{
+            text-align: left;
+            margin-top: 20px;
+            h{
+                color: #054b16;
+                font-weight: bolder;
+                font-size: 25px;
+                
+            }
+        }
+        
+        .fields{
+            text-align: left;
+            margin-top: 20px;
+            .options{
+                display: flex;
+
+                #quantityF{
+                    margin-left: 20px;
+                    margin-top: -15px;
+                }
+            }
+            span, p{
+                color: 454442;
+                font-weight: 600;
+            }
+        }
+
+        .button-addtocart {
+            text-align: left;
+            padding: 15px 30px;
+            font-size: 0.92em;
+            height: 50px;
+            width: 20%;
+            cursor: pointer;
+            background-color: #3b8526;
+            -webkit-transition: all 0.25s, opacity 0.75s 0.5s;
+            transition: all 0.25s, opacity 0.75s 0.5s;
+            box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            -webkit-box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c;
+            color: white;
+            margin-left: 0;
+            margin-top: 20px;
+
+
+            p {
+                width: 200px;
+                margin-left: 0;
+                margin-top: 0px;
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+        }
+
+        .button-addtocart:hover {
+            background: #171615;
+            background-image: linear-gradient(#3d3938, #171615);
+            text-shadow: 0 1px 0 #000;
+            text-decoration: none;
+            border: none;
+            -webkit-box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            box-shadow: inset 0 0 #fff, inset 0 0 #000;
+            color: #fff;
+        }
+        .text-top{
+            text-align: left;
+            margin-top: 20px;
+        }
+        ul{
+            text-align: left;
+        }
+    }
+}
+.video{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+/////////////// PRODUCTS
+.header-shop{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #3C8727;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        font-family: 'Minecraft-Ten';
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .img-header{
+        background: url(//cdn.shopify.com/s/files/1/0266/4841/2351/t/27/assets/whiteBottomBlocks.png?v=9042973…);
+        width: 180px;
+        height: 90px;
+        margin-left: 50px;
+    }
+}
+.cartegory{
+    margin-top: 55px;
+    display: flex;
+    .cartegory-left{
+        margin-left: 30px;
+        h1{
+            font-weight: 500;
+            font-size: 1.3rem;
+            width: 200px;
+        }
+        ul{
+            list-style: none;
+            a{
+                font-size: 1rem;
+                transition: 0.5s ease-in-out;
+                text-decoration: none;
+                color: #000;
+            }
+            a:hover{
+                color: #3c8727;
+            }
+        }
+        hr{
+            align-items: left;
+            size: 10px;
+        }
+    }
+    .cartegory-right{
+        margin-left: 3%;
+        justify-content: space-between;
+        .cartegory-items{
+            width: calc(33% - 12px);
+            text-align: center;
+        /*.img-items-hover{
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .img-items-hover:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+         */
+         h2{
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-align: center;
+         }
+         img{
+            width: 75%;
+         }
+        }
+    }
+}
